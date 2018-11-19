@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Door : MonoBehaviour {
+    public float openTime = 2;
     public Door nextDoor;
     protected virtual void OpenDoor()
     {
@@ -10,6 +11,20 @@ public class Door : MonoBehaviour {
         {
             nextDoor.enabled = true;
         }
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
+        StartCoroutine(Move());
+    }
+    private IEnumerator Move()
+    {
+        float height = GetComponent<Renderer>().bounds.size.y * 2;
+        float currentHeight = 0;
+        while (currentHeight < height)
+        {
+            float distance = (Time.deltaTime * height) / openTime;
+            currentHeight += distance;
+            transform.position += new Vector3(0, distance, 0);
+            yield return null;
+        }
+        yield break;
     }
 }
