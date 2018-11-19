@@ -3,21 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
 using UnityEngine.UI;
+using UnityEngine.Events;
 public class Door : MonoBehaviour
 {
-    public GameObject UI;
+    public GameObject ui;
     public FirstPersonController controller;
     public InputField field;
     public bool uiOpen = false;
-    // Update is called once per frame
+    public string password;
+    private void Start()
+    {
+        onSubmit += ValidateInput;
+        field.onEndEdit.AddListener(onSubmit);
+    }
+    private UnityAction<string> onSubmit;
     private void OnMouseDown()
     {
         if (Input.GetMouseButtonDown(0) && !uiOpen)
         {
-            UI.SetActive(true);
             controller.enabled = false;
-            //Cursor.lockState = CursorLockMode.Confined;
-            field.ActivateInputField();
+            ui.SetActive(true);
             uiOpen = true;
         }
     }
@@ -25,10 +30,22 @@ public class Door : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && uiOpen)
         {
-            UI.SetActive(false);
-            controller.enabled = true;
-            //Cursor.lockState = CursorLockMode.Locked;
-            uiOpen = false;
+            CloseUI();
+        }
+    }
+    private void CloseUI()
+    {
+        ui.SetActive(false);
+        controller.enabled = true;
+        //Cursor.lockState = CursorLockMode.Locked;
+        uiOpen = false;
+    }
+    private void ValidateInput(string input)
+    {
+        CloseUI();
+        if (input == password)
+        {
+            gameObject.SetActive(false);
         }
     }
 }
