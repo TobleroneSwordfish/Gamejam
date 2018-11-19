@@ -9,7 +9,7 @@ public class Door : MonoBehaviour
     public GameObject ui;
     public FirstPersonController controller;
     public InputField field;
-    public Text successText;
+    public bool caseSensitive = true;
     public bool uiOpen = false;
     public string password;
     private void Start()
@@ -46,7 +46,7 @@ public class Door : MonoBehaviour
     private void ValidateInput(string input)
     {
         CloseUI();
-        if (input == password)
+        if (string.Compare(input, password, !caseSensitive) == 0)
         {
             gameObject.SetActive(false);
         }
