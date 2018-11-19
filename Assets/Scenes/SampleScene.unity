@@ -5423,6 +5423,11 @@ Prefab:
       propertyPath: password
       value: 0399
       objectReference: {fileID: 0}
+    - target: {fileID: 23545181143891736, guid: 866815859f54360488cf4ff17a101c2a,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2966dd6842ed791438726c53a3ffaee7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 866815859f54360488cf4ff17a101c2a, type: 2}
   m_IsPrefabAsset: 0
@@ -7001,6 +7006,11 @@ Prefab:
       propertyPath: controller
       value: 
       objectReference: {fileID: 80692695}
+    - target: {fileID: 23545181143891736, guid: 866815859f54360488cf4ff17a101c2a,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d4d9a2f0d42c0e14898a03c95407c3ed, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 866815859f54360488cf4ff17a101c2a, type: 2}
   m_IsPrefabAsset: 0
