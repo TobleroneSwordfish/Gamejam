@@ -9,6 +9,7 @@ public class Door : MonoBehaviour
     public GameObject ui;
     public FirstPersonController controller;
     public InputField field;
+    public Text successText;
     public bool uiOpen = false;
     public string password;
     private void Start()
@@ -23,6 +24,8 @@ public class Door : MonoBehaviour
         {
             controller.enabled = false;
             ui.SetActive(true);
+            field.Select();
+            field.ActivateInputField();
             uiOpen = true;
         }
     }
