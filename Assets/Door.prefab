@@ -205,6 +205,7 @@ MonoBehaviour:
   ui: {fileID: 1921447794889324}
   controller: {fileID: 0}
   field: {fileID: 114554423452330352}
+  successText: {fileID: 0}
   uiOpen: 0
   password: Swordfish
 --- !u!114 &114361264716958178
