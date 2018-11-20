@@ -5126,7 +5126,7 @@ Prefab:
         type: 2}
       propertyPath: nextDoor
       value: 
-      objectReference: {fileID: 1244035200}
+      objectReference: {fileID: 0}
     - target: {fileID: 114344240992778360, guid: 866815859f54360488cf4ff17a101c2a,
         type: 2}
       propertyPath: openTime
@@ -5234,7 +5234,8 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 0.4417
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114863218471730816, guid: 6112edf09b8d7084493af60166d3506e, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 6112edf09b8d7084493af60166d3506e, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1118830425
@@ -5916,7 +5917,8 @@ Prefab:
       propertyPath: openTime
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114344240992778360, guid: 866815859f54360488cf4ff17a101c2a, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 866815859f54360488cf4ff17a101c2a, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1244035199 stripped
@@ -5924,12 +5926,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1933924954292986, guid: 866815859f54360488cf4ff17a101c2a,
     type: 2}
   m_PrefabInternal: {fileID: 1244035198}
---- !u!114 &1244035200 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114344240992778360, guid: 866815859f54360488cf4ff17a101c2a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1244035198}
-  m_Script: {fileID: 11500000, guid: e33e3e972d3ac4248ab8c4dd6415b84e, type: 3}
 --- !u!114 &1244035201
 MonoBehaviour:
   m_ObjectHideFlags: 0
