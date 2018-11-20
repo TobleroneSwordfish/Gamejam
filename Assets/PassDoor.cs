@@ -10,7 +10,7 @@ public class PassDoor : Door
     public FirstPersonController controller;
     public InputField field;
     public bool caseSensitive = true;
-    public bool uiOpen = false;
+    protected bool uiOpen = false;
     public string password;
     private bool reEnableController = false;
     private void Start()

@@ -5,12 +5,14 @@ using UnityEngine;
 public class Door : MonoBehaviour {
     public float openTime = 2;
     public Door nextDoor;
+    public bool open = false;
     protected virtual void OpenDoor()
     {
         if (nextDoor != null)
         {
             nextDoor.enabled = true;
         }
+        open = true;
         //gameObject.SetActive(false);
         StartCoroutine(Move());
     }
