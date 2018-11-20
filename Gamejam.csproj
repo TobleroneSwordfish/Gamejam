@@ -327,6 +327,8 @@
     <Compile Include="Assets\Door.cs" />
     <Compile Include="Assets\KeypadDoor.cs" />
     <Compile Include="Assets\KeypadItem.cs" />
+    <Compile Include="Assets\MorsePicture.cs" />
+    <Compile Include="Assets\morseScript.cs" />
     <Compile Include="Assets\MultiPassDoor.cs" />
     <Compile Include="Assets\PassDoor.cs" />
     <Compile Include="Assets\Picture.cs" />
