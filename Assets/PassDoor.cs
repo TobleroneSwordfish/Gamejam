@@ -13,8 +13,9 @@ public class PassDoor : Door
     protected bool uiOpen = false;
     public string password;
     private bool reEnableController = false;
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         onSubmit += ValidateInput;
         field.onEndEdit.AddListener(onSubmit);
     }

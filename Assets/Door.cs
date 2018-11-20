@@ -16,6 +16,14 @@ public abstract class Door : MonoBehaviour {
         //gameObject.SetActive(false);
         StartCoroutine(Move());
     }
+    public virtual void Start()
+    {
+        foreach(Transform child in transform)
+        {
+            Reflector reflector = child.gameObject.AddComponent<Reflector>();
+            reflector.parent = this;
+        }
+    }
     public abstract void OnMouseDown();
     private IEnumerator Move()
     {

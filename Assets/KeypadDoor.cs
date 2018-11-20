@@ -7,8 +7,9 @@ public class KeypadDoor : Door {
     public string passCode;
     private KeypadItem[] buttons;
 	// Use this for initialization
-	void Start () {
+	public override void Start () {
         buttons = buttonParent.GetComponentsInChildren<KeypadItem>();
+        base.Start();
 	}
     public override void OnMouseDown()
     {

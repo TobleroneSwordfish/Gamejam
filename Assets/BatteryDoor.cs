@@ -5,9 +5,10 @@ using UnityEngine;
 public class BatteryDoor : Door {
     public bool pluggedIn;
 
-    private void Start()
+    public override void Start()
     {
         pluggedIn = SystemInfo.batteryStatus == BatteryStatus.Charging || SystemInfo.batteryStatus == BatteryStatus.Full;
+        base.Start();
     }
     public override void OnMouseDown()
     {
