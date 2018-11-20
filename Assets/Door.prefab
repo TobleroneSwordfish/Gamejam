@@ -218,7 +218,6 @@ GameObject:
   - component: {fileID: 23545181143891736}
   - component: {fileID: 65147791412188614}
   - component: {fileID: 114156888862443786}
-  - component: {fileID: 114465930793227842}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -326,8 +325,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1933924954292986}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.5, y: 3.205832, z: -4.0255}
-  m_LocalScale: {x: 4.5635, y: 6.411664, z: 0.5327167}
+  m_LocalPosition: {x: 0.33616957, y: 3.205832, z: -4.0463133}
+  m_LocalScale: {x: 4.5635, y: 6.411664, z: 0.83587}
   m_Children:
   - {fileID: 224979912867182096}
   - {fileID: 4089327370973876}
@@ -649,7 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e2deb9e0efeea41af5007cdbc4c762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 114465930793227842}
+  parent: {fileID: 114156888862443786}
 --- !u!114 &114017687145450576
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -688,7 +687,7 @@ MonoBehaviour:
   ui: {fileID: 1921447794889324}
   controller: {fileID: 0}
   field: {fileID: 114554423452330352}
-  caseSensitive: 1
+  caseSensitive: 0
   password: Pigeon
 --- !u!114 &114280150891446534
 MonoBehaviour:
@@ -701,7 +700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e2deb9e0efeea41af5007cdbc4c762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 114465930793227842}
+  parent: {fileID: 114156888862443786}
 --- !u!114 &114361264716958178
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -740,7 +739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e2deb9e0efeea41af5007cdbc4c762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 114465930793227842}
+  parent: {fileID: 114156888862443786}
 --- !u!114 &114421306588299376
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -752,26 +751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e2deb9e0efeea41af5007cdbc4c762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 114465930793227842}
---- !u!114 &114465930793227842
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1933924954292986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e33e3e972d3ac4248ab8c4dd6415b84e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openTime: 2
-  nextDoor: {fileID: 0}
-  open: 0
-  ui: {fileID: 1921447794889324}
-  controller: {fileID: 0}
-  field: {fileID: 114554423452330352}
-  caseSensitive: 1
-  password: Pigeon
+  parent: {fileID: 114156888862443786}
 --- !u!114 &114496523152945412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -932,7 +912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93e2deb9e0efeea41af5007cdbc4c762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 114465930793227842}
+  parent: {fileID: 114156888862443786}
 --- !u!114 &114813668889245298
 MonoBehaviour:
   m_ObjectHideFlags: 1
