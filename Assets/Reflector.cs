@@ -7,6 +7,9 @@ public class Reflector : MonoBehaviour {
     private void OnMouseDown()
     {
         print("mouse down on child object");
-        parent.OnMouseDown();
+        if (parent.enabled)
+        {
+            parent.OnMouseDown();
+        }
     }
 }

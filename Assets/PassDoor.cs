@@ -22,7 +22,7 @@ public class PassDoor : Door
     private UnityAction<string> onSubmit;
     public override void OnMouseDown()
     {
-        if (Input.GetMouseButtonDown(0) && !uiOpen)
+        if (Input.GetMouseButtonDown(0) && !uiOpen && this.enabled)
         {
             controller.enabled = false;
             ui.SetActive(true);
