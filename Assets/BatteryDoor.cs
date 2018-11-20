@@ -9,7 +9,10 @@ public class BatteryDoor : Door {
     {
         pluggedIn = SystemInfo.batteryStatus == BatteryStatus.Charging || SystemInfo.batteryStatus == BatteryStatus.Full;
     }
-
+    public override void OnMouseDown()
+    {
+        
+    }
     // Update is called once per frame
     void Update () {
 		bool newPluggedIn = SystemInfo.batteryStatus == BatteryStatus.Charging || SystemInfo.batteryStatus == BatteryStatus.Full;

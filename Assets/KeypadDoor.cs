@@ -10,9 +10,12 @@ public class KeypadDoor : Door {
 	void Start () {
         buttons = buttonParent.GetComponentsInChildren<KeypadItem>();
 	}
-	
-	// Update is called once per frame
-	void Update ()
+    public override void OnMouseDown()
+    {
+        
+    }
+    // Update is called once per frame
+    void Update ()
     {
         string value = "";
 		foreach (KeypadItem button in buttons)

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Door : MonoBehaviour {
+public abstract class Door : MonoBehaviour {
     public float openTime = 2;
     public Door nextDoor;
     public bool open = false;
@@ -16,6 +16,7 @@ public class Door : MonoBehaviour {
         //gameObject.SetActive(false);
         StartCoroutine(Move());
     }
+    public abstract void OnMouseDown();
     private IEnumerator Move()
     {
         float height = GetComponent<Renderer>().bounds.size.y * 2;
