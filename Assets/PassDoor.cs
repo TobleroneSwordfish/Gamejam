@@ -19,7 +19,7 @@ public class PassDoor : Door
         field.onEndEdit.AddListener(onSubmit);
     }
     private UnityAction<string> onSubmit;
-    private void OnMouseDown()
+    public override void OnMouseDown()
     {
         if (Input.GetMouseButtonDown(0) && !uiOpen)
         {
