@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.88861275, g: 0.8866738, b: 0.8906909, a: 1}
+  m_IndirectSpecularColor: {r: 0.8885021, g: 0.88658893, b: 0.8906091, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5122,6 +5122,16 @@ Prefab:
       propertyPath: caseSensitive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114344240992778360, guid: 866815859f54360488cf4ff17a101c2a,
+        type: 2}
+      propertyPath: nextDoor
+      value: 
+      objectReference: {fileID: 1244035200}
+    - target: {fileID: 114344240992778360, guid: 866815859f54360488cf4ff17a101c2a,
+        type: 2}
+      propertyPath: openTime
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 866815859f54360488cf4ff17a101c2a, type: 2}
   m_IsPrefabAsset: 0
@@ -5896,9 +5906,44 @@ Prefab:
       propertyPath: password
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114344240992778360, guid: 866815859f54360488cf4ff17a101c2a,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114344240992778360, guid: 866815859f54360488cf4ff17a101c2a,
+        type: 2}
+      propertyPath: openTime
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 866815859f54360488cf4ff17a101c2a, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1244035199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1933924954292986, guid: 866815859f54360488cf4ff17a101c2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1244035198}
+--- !u!114 &1244035200 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114344240992778360, guid: 866815859f54360488cf4ff17a101c2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1244035198}
+  m_Script: {fileID: 11500000, guid: e33e3e972d3ac4248ab8c4dd6415b84e, type: 3}
+--- !u!114 &1244035201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1244035199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dea233d253e3b4b46a3a324d3e469a86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openTime: 2
+  nextDoor: {fileID: 0}
+  pluggedIn: 0
 --- !u!1 &1247957742
 GameObject:
   m_ObjectHideFlags: 0
