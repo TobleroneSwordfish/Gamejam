@@ -6,6 +6,7 @@ public abstract class Door : MonoBehaviour {
     public float openTime = 2;
     public Door nextDoor;
     public bool open = false;
+    public bool sideways = false;
     protected virtual void OpenDoor()
     {
         if (nextDoor != null)
@@ -33,7 +34,8 @@ public abstract class Door : MonoBehaviour {
         {
             float distance = (Time.deltaTime * height) / openTime;
             currentHeight += distance;
-            transform.position += new Vector3(0, distance, 0);
+            if (sideways) transform.position += new Vector3(distance * 10, 0, 0);
+            else transform.position += new Vector3(0, distance, 0);
             yield return null;
         }
         yield break;
