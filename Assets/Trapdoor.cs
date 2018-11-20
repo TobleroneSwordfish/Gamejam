@@ -29,4 +29,6 @@ public class Trapdoor : MonoBehaviour
             yield return null;
         }
     }
+    //to have lives you need a concept of death - max whale
 }
+
