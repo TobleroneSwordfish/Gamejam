@@ -12,6 +12,7 @@ public class PassDoor : Door
     public bool caseSensitive = true;
     public bool uiOpen = false;
     public string password;
+    private bool reEnableController = false;
     private void Start()
     {
         onSubmit += ValidateInput;
@@ -31,6 +32,10 @@ public class PassDoor : Door
     }
     private void Update()
     {
+        if (reEnableController)
+        {
+            controller.enabled = true;
+        }
         if (Input.GetKeyDown(KeyCode.Escape) && uiOpen)
         {
             CloseUI();
@@ -39,8 +44,9 @@ public class PassDoor : Door
     private void CloseUI()
     {
         ui.SetActive(false);
+        //reEnableController = true;
         controller.enabled = true;
-        //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
         uiOpen = false;
     }
     private void ValidateInput(string input)
