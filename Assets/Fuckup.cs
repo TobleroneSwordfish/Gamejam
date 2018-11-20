@@ -4,12 +4,8 @@ using UnityEngine;
 using MK.Glow;
 public class Fuckup : MonoBehaviour
 {
-    private MKGlowFree glowScript;
+    public MKGlowFree glowScript;
     public float fuckTime;
-    private void Start()
-    {
-        glowScript = GetComponent<MKGlowFree>();
-    }
     public void DoIt()
     {
         glowScript.GlowType = GlowType.Fullscreen;

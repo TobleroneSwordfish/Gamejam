@@ -18,6 +18,7 @@ public class Reveal : MonoBehaviour, Target {
         if (Input.GetMouseButtonDown(0))
         {
             source.Play();
+            GetComponent<Fuckup>().DoIt();
         }
     }
 }
