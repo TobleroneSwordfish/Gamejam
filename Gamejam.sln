@@ -7,13 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamejam.Plugins", "Gamejam.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamejam", "Gamejam.csproj", "{476B0325-E62C-4E85-BB94-953EC0E9E00F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamejam.Editor.Plugins", "Gamejam.Editor.Plugins.csproj", "{BA25E856-048C-C8E8-753E-13A1271D87B7}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.PackageManagerUI.Editor", "Unity.PackageManagerUI.Editor.csproj", "{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.TextMeshPro.Editor", "Unity.TextMeshPro.Editor.csproj", "{3A848AB7-9891-EDDA-D555-BF184C2F81F4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEditor.StandardEvents", "UnityEditor.StandardEvents.csproj", "{6800202F-4402-D405-F8CB-03DC7BD78B92}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamejam.Editor.Plugins", "Gamejam.Editor.Plugins.csproj", "{BA25E856-048C-C8E8-753E-13A1271D87B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +33,10 @@ Global
 		{476B0325-E62C-4E85-BB94-953EC0E9E00F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{476B0325-E62C-4E85-BB94-953EC0E9E00F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{476B0325-E62C-4E85-BB94-953EC0E9E00F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA25E856-048C-C8E8-753E-13A1271D87B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA25E856-048C-C8E8-753E-13A1271D87B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA25E856-048C-C8E8-753E-13A1271D87B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA25E856-048C-C8E8-753E-13A1271D87B7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,10 +49,6 @@ Global
 		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BA25E856-048C-C8E8-753E-13A1271D87B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BA25E856-048C-C8E8-753E-13A1271D87B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BA25E856-048C-C8E8-753E-13A1271D87B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BA25E856-048C-C8E8-753E-13A1271D87B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
