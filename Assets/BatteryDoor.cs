@@ -8,6 +8,10 @@ public class BatteryDoor : Door {
     public override void Start()
     {
         pluggedIn = SystemInfo.batteryStatus == BatteryStatus.Charging || SystemInfo.batteryStatus == BatteryStatus.Full;
+        if (SystemInfo.batteryStatus == BatteryStatus.Unknown)
+        {
+            OpenDoor();
+        }
         base.Start();
     }
     public override void OnMouseDown()
